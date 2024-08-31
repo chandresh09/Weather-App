@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <!-- Bootstrap Icon -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+
+    <!-- custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="script.js" defer></script>
+
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1 class="heading">⛅ Check Weather of Your City ⛅</h1>
+    <div class="container">
+        <div class="search">
+            <input type="text" placeholder="Search City">
+            <i class="bi bi-search search-icon"></i>
+        </div>
+        <div class="weather">
+            <img src="assets/asset 1.png" alt="Cloud">
+            <div class="weather-text">
+                <p class="des"></p>
+                <h2><span class="temp">0</span><sup>o</sup><span class="celcious">C</span></h2>
+                <span class="city name">-</span>
+            </div>
+        </div>
+        <div class="weather-details">
+            <div class="humidity">
+                <i class="bi bi-water w-icon"></i>
+                <p class="figure"><span class="hm">0</span>%</p>
+                <p class="detail">Humidity</p>
+            </div>
+            <div class="wind">
+                <i class="bi bi-tornado w-icon"></i>
+                <p class="figure"><span class="sp">0</span> km/h</p>
+                <p class="detail">Wind Speed</p>
+            </div>
+        </div>
+    </div>
+    <div><p class="date"></p></div>
+</body>
+</html>
