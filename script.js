@@ -10,13 +10,15 @@ async function checkWeather(city) {
         const api_key = `3a1be83dfa9c35ee1098db641a46496c`;
         const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${api_key}`);
         const data = await response.json();
-        // console.log(data);
+        console.log(data);
         let desc = document.querySelector(".des");
         let name = document.querySelector(".name");
+        let icon = document.querySelector(".icon");
         let humidity = document.querySelector(".hm");
         let wind = document.querySelector(".sp");
         let temp = document.querySelector(".temp");
 
+        icon.src = `http://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
         desc.innerText = data.weather[0].main;
         temp.innerText = Math.round(data.main.temp - 273.15);
         name.innerText = data.name;
